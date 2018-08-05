@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Vehicle, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'attributes' do 
+    # it 'has a make' do 
+    #   make = 'Toyota'
+    #   vehicle = Vehicle.create(make: make)
+    #   expect(vehicle.make).to eq(make)
+    #   vvv utilizing shoulda-matchers
+    it { should respond_to :make }
+    end
+
 end
